@@ -1,8 +1,6 @@
 import os
-import a_env_vars
+from dotenv import load_dotenv
 import tempfile
-import pickle
-from pathlib import Path
 import streamlit as st
 from langchain.chat_models import ChatOpenAI
 from langchain.document_loaders import PyPDFLoader
@@ -14,8 +12,7 @@ from langchain.chains import ConversationalRetrievalChain
 from langchain.vectorstores import DocArrayInMemorySearch
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
-os.environ["OPENAI_API_KEY"] = a_env_vars.OPENAI_API_KEY
-
+load_dotenv()
 
 st.set_page_config(page_title="David Santacruz", page_icon="🦾")
 
