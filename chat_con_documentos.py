@@ -1,5 +1,4 @@
 import os
-from dotenv import load_dotenv
 import tempfile
 import streamlit as st
 from langchain.chat_models import ChatOpenAI
