@@ -8,3 +8,4 @@ streamlit==1.27.0
 streamlit-authenticator==0.2.3
 streamlit-chat==0.1.1
 tiktoken==0.5.1
+langchain[docarray]==0.1.0
