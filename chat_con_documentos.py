@@ -37,7 +37,8 @@ def configure_retriever(uploaded_files):
     splits = text_splitter.split_documents(docs)
 
     # Creamos embeddings y las guardamos en un vector
-    embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+    #embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+    embeddings =  OpenAIEmbeddings()
     vectordb = DocArrayInMemorySearch.from_documents(splits, embeddings)
 
     # Definimos el  retriever
