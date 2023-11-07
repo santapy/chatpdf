@@ -38,7 +38,7 @@ def configure_retriever(uploaded_files):
 
     # Creamos embeddings y las guardamos en un vector
     #embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-    embeddings =  OpenAIEmbeddings()
+    embeddings =  OpenAIEmbeddings(openai_api_key=OPENIA_API_KEY)
     vectordb = DocArrayInMemorySearch.from_documents(splits, embeddings)
 
     # Definimos el  retriever
