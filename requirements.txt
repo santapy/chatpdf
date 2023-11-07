@@ -1,5 +1,5 @@
-﻿langchain==0.0.320
-langsmith==0.0.49
+﻿langchain
+langsmith
 openai==0.28.1
 PyPDF2==3.0.1
 streamlit==1.27.0
@@ -8,4 +8,4 @@ streamlit-chat==0.1.1
 tiktoken==0.5.1
 docarray==0.21
 pypdf==3.17.0
-langchain[docarray]==0.0.1
+langchain[docarray]
